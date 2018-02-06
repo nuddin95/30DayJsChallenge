@@ -74,7 +74,9 @@
   }
 
   const keys = Array.from(document.querySelectorAll('.key'));
+  //add event listener to listen for when transition ends
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  //add event to listen fo rpressing a certain key
   window.addEventListener('keydown', playSound);
 </script>
 
